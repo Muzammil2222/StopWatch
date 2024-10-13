@@ -1,0 +1,73 @@
+/* General page styling */
+body {
+    background: linear-gradient(135deg, #73a5ff, #5477f5);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* Stop Watch Title */
+h1 {
+    margin: 0 10px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+/* Flex container for the stopwatch display */
+div {
+    margin-bottom: 20px;
+}
+
+/* Glass effect for the stopwatch */
+div {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons styling */
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Styling the number display */
+#min, #sec, #ms {
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+    body{
+        flex-direction: column;
+    }
+}
